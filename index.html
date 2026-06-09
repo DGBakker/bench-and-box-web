@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bench & Box Refurbishing | Precision Repairs & Sourced Logistics</title>
+    <style>
+        :root {
+            --bg-dark: #0f172a;
+            --bg-card: #1e293b;
+            --cyan: #06b6d4;
+            --green: #10b981;
+            --text-light: #f8fafc;
+            --text-dim: #94a3b8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 3px solid var(--cyan);
+            position: relative;
+        }
+
+        .header-badge {
+            background-color: var(--green);
+            color: var(--bg-dark);
+            font-weight: bold;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            display: inline-block;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            font-size: 42px;
+            color: var(--text-light);
+            margin-bottom: 10px;
+            font-weight: 800;
+        }
+
+        h1 span {
+            color: var(--cyan);
+        }
+
+        .tagline {
+            font-size: 18px;
+            color: var(--text-dim);
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border-radius: 12px;
+            padding: 35px;
+            border: 1px solid #334155;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--cyan);
+        }
+
+        .card-icon {
+            font-size: 36px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .card-title {
+            font-size: 24px;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .card-title.bench { color: var(--cyan); }
+        .card-title.box { color: var(--green); }
+
+        .card-list {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .card-list li {
+            margin-bottom: 10px;
+            color: var(--text-dim);
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .card-list li::before {
+            content: "•";
+            color: var(--cyan);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .intro-section {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .intro-section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .intro-section p {
+            color: var(--text-dim);
+            font-size: 16px;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            background-color: var(--cyan);
+            color: var(--bg-dark);
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #22d3ee;
+        }
+
+        footer {
+            background-color: #020617;
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid #1e293b;
+            color: var(--text-dim);
+            font-size: 14px;
+        }
+
+        footer span {
+            color: var(--cyan);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <span class="header-badge">ELTR Certified Diagnostics</span>
+        <h1>Bench & <span>Box</span> Refurbishing</h1>
+        <p class="tagline">Troubleshot on the Bench. Fulfilled in the Box. High-performance micro-electronics restoration and optimized multi-category logistics.</p>
+        <a href="#contact" class="btn">Initiate Sourcing Inquiry</a>
+    </header>
+
+    <div class="container">
+        <div class="intro-section">
+            <h2>Our Dual-Track Operations</h2>
+            <p>Based in Edmonton, Alberta, Bench & Box Refurbishing combines precision board-level diagnostics with automated, rapid-transit logistics to buy, restore, and distribute high-value consumer assets across North America.</p>
+        </div>
+
+        <div class="grid">
+            <!-- Bench Repair Card -->
+            <div class="card">
+                <span class="card-icon">🔬</span>
+                <h3 class="card-title bench">The Bench Track</h3>
+                <p style="color: var(--text-dim);">Highly skilled micro-electronics diagnostics and board-level repairs. We restore dead, non-functional GPUs, camera lenses, and premium audio equipment to pristine factory specifications.</p>
+                <ul class="card-list">
+                    <li>SMD Component Desoldering & Replacement</li>
+                    <li>Phase-Level VRM and Shunt Resistor Diagnostics</li>
+                    <li>Liquid TIM Thermal Overhaul (Arctic MX-6 Repasting)</li>
+                    <li>Multi-hour Stress, Benchmark, & Stability Reports</li>
+                </ul>
+            </div>
+
+            <!-- Logistics Card -->
+            <div class="card">
+                <span class="card-icon">📦</span>
+                <h3 class="card-title box">The Box Track</h3>
+                <p style="color: var(--text-dim);">High-velocity, multi-category asset acquisition. We scout, evaluate, and purchase undervalued operational gear, package them under strict ESD parameters, and ship them North America-wide.</p>
+                <ul class="card-list">
+                    <li>Dynamic Sourcing & Arbitrage Price-Anomaly Detection</li>
+                    <li>Carrier API Freight Cost & Dimensional-Weight Optimizations</li>
+                    <li>Ultra-Secure Electrostatic (ESD) Protective Packaging</li>
+                    <li>Canada Post, FedEx, and UPS Multi-Day Express Shipping</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <p>© 2026 <span>Bench & Box Refurbishing</span>. All rights reserved.</p>
+        <p style="margin-top: 10px; font-size: 12px; color: #475569;">Edmonton, AB | Certified Electronics Refurbishment & Logistics</p>
+    </footer>
+
+</body>
+</html>
